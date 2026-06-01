@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cicd-gate"
+version = "0.3.3"
+description = "CI/CD compliance gate for Australian ISM and Essential Eight standards"
+readme = "README.md"
+authors = [
+    {name = "David Monch", email = "monch1962@gmail.com"},
+]
+license = "Apache-2.0"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/monch1962/compliance-platform"
+Source = "https://github.com/monch1962/compliance-platform"
+
+[project.scripts]
+cicd-gate = "cicd_gate.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["cicd_gate*"]

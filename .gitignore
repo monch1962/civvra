@@ -1,0 +1,15 @@
+/cicd-gate
+/cicd-gate.exe
+/cicd-gate-test
+packages/cicd-gate/cicd-gate
+/dist/
+*.tfstate
+*.tfstate.backup
+.env
+.env.local
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+*.log
+.DS_Store
